@@ -1,0 +1,58 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    display: flex; /* Establece un contenedor flexible */
+    flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Altura del cuerpo igual al 100% del viewport */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Ancho completo del contenedor padre */
+}
+
+/* Estilos para la lista no ordenada (ul) dentro del formulario */
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+/* Estilos para cada ítem de la lista (li) dentro del formulario */
+li {
+    display: flex; /* Establece un contenedor flexible para los elementos de la lista */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente en el contenedor */
+    margin-bottom: 10px; /* Margen inferior entre los elementos */
+}
+
+/* Estilos para las etiquetas, selectores y entradas del formulario */
+label, select, input {
+    flex: 1; /* Ocupa todo el espacio disponible en el contenedor flexible */
+}
+
+/* Estilos para las etiquetas de los checkboxes */
+label.checkbox-label {
+    display: inline-block; /* Mantiene las etiquetas en línea con los checkboxes */
+    margin-right: 10px; /* Margen derecho entre las etiquetas y los checkboxes */
+}
+
+/* Estilos para el contenedor de los checkboxes */
+.checkbox-container {
+    display: flex; /* Establece un contenedor flexible para los checkboxes */
+    flex-wrap: wrap; /* Envuelve los checkboxes si no hay suficiente espacio */
+    align-items: center; /* Centra los checkboxes verticalmente en el contenedor */
+}
+
+/* Estilos específicos para los checkboxes */
+input[type="checkbox"] {
+    width: auto; /* Ajusta automáticamente el ancho de los checkboxes */
+    margin-right: 5px; /* Margen derecho entre los checkboxes */
+}
+
+/* Estilos para el botón de envío */
+button {
+    margin-top: 10px; /* Margen superior entre el último elemento y el botón */
+}
